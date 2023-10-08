@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3"
+        android:background="@drawable/rectangle_with_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_inplay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="In-Play"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Today"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tv_tomorrow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Tommorow"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/heading_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Cricket"
+        android:textSize="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+         />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/heading_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:text="Soccer"
+        android:textSize="20dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
